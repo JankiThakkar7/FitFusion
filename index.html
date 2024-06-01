@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Landing Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero text-white text-center py-5">
+        <div class="container">
+            <h1>FitFusion</h1>
+            <p>Empower Your Fitness Journey with FitFusion: Where Strength Meets Serenity</p>
+            <a href="#features" class="btn btn-primary m-2">Get Started</a>
+            <a href="#features" class="btn btn-secondary m-2">Learn More</a>
+        </div>
+    </header>
+    
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="dark-mode-toggle-checkbox">
+        <label for="dark-mode-toggle-checkbox"></label>
+    </div>
+
+    <section id="features" class="features py-5">
+        <div class="container text-center">
+            <h2>Features</h2>
+            <div class="row mt-4"></div> <!-- Features will be populated dynamically here -->
+        </div>
+    </section>
+    
+    <section id="screenshots" class="screenshots py-5">
+        <div class="container text-center">
+            <h2>Screenshots</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="https://cdn.dribbble.com/users/720472/screenshots/1951101/fitness-app_shot.png" class="img-fluid rounded shadow" alt="Screenshot 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://i.pcmag.com/imagery/articles/011s5mS47FcyBaQFlEyyECa-11.png" class="img-fluid rounded shadow" alt="Screenshot 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://th.bing.com/th/id/OIG2.658ZDtlPn6Pa2uNf3lPO?pid=ImgGn" class="img-fluid rounded shadow" alt="Screenshot 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img src="" alt="Screenshot" class="lightbox-img">
+    </div>
+    
+    <section id="testimonials" class="testimonials py-5">
+        <div class="container text-center">
+            <h2>Testimonials</h2>
+            <div class="row mt-4"></div> <!-- Testimonials will be populated dynamically here -->
+        </div>
+    </section>
+    
+    <section id="pricing" class="pricing py-5">
+        <div class="container text-center">
+            <h2>Pricing Plans</h2>
+            <div class="row mt-4"></div> <!-- Pricing plans will be populated dynamically here -->
+        </div>
+    </section>
+    
+    <section id="contact" class="contact py-5">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <form action="" method="post" class="mt-4">
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Send</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="py-4 text-white text-center">
+        <div class="container">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <button class="scroll-to-top btn btn-primary">Top</button>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

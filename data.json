@@ -1,0 +1,78 @@
+{
+    "hero": {
+        "headline": "FitFusion",
+        "subheadline": "Empower Your Fitness Journey with FitFusion: Where Strength Meets Serenity",
+        "ctaButtons": [
+            {
+                "text": "Download Now",
+                "link": "/download"
+            },
+            {
+                "text": "Learn More",
+                "link": "#features"
+            }
+        ]
+    },
+    "features": [
+        {
+            "title": "Customized Workout Plans:",
+            "description": "Tailor-made exercise routines based on your fitness level, goals, and preferences.",
+            "icon": "https://via.placeholder.com/100"
+        },
+        {
+            "title": "Comprehensive Exercise Tracking",
+            "description": "Keep tabs on your progress with detailed workout logs and performance metrics.",
+            "icon": "https://via.placeholder.com/100"
+        },
+        {
+            "title": "Nutrition Guidance",
+            "description": "Access to personalized meal plans and nutritional advice to fuel your workouts and promote overall health.",
+            "icon": "https://via.placeholder.com/100"
+        }
+    ],
+    "testimonials": [
+        {
+            "name": "Sarah Johnson",
+            "feedback": "I've tried countless fitness apps, but none compare to this one! With personalized workouts, delicious meal plans, and an amazing community, I've finally achieved my fitness goals. Thank you!",
+            "avatar": "https://via.placeholder.com/50"
+        },
+        {
+            "name": "Michael Rodriguez",
+            "feedback": "As a busy professional, I struggled to find time for exercise. This app changed everything! The convenient workout plans and motivational support keep me on track, and I've never felt better.",
+            "avatar": "https://via.placeholder.com/50"
+        },
+        {
+            "name": "Emily Chen",
+            "feedback": "I was skeptical at first, but after just a few weeks using this app, I've seen incredible results! The variety of workouts keeps things interesting, and the nutrition tips have transformed my eating habits.",
+            "avatar": "https://via.placeholder.com/50"
+        }
+    ],
+    "pricing": [
+        {
+            "plan": "Basic Plan",
+            "price": "$9.99/month",
+            "features": [
+                "Personalized workout plans",
+                "Exercise tracking"
+            ]
+        },
+        {
+            "plan": "Pro Plan",
+            "price": "$19.99/month",
+            "features": [
+                "Advanced workout routines",
+                "Nutrition guidance",
+                "Community support"
+            ]
+        },
+        {
+            "plan": "Premium Plan",
+            "price": "$29.99/month",
+            "features": [
+                "Live virtual training sessions",
+                "Personalized coaching",
+                "Exclusive challenges"
+            ]
+        }
+    ]
+}

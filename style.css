@@ -1,0 +1,345 @@
+:root {
+  --primary-gradient: linear-gradient(90deg, #a9d4fb 10%, #5d9cff 100%);
+  --secondary-gradient: linear-gradient(90deg, #2e75f8 10%, #054bab 100%);
+  --text-color: #333;
+  --background-color: #f8f9fa;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.hero {
+  background: url("https://t3.ftcdn.net/jpg/04/29/35/62/360_F_429356296_CVQ5LkC6Pl55kUNLqLisVKgTw9vjyif1.jpg")
+    no-repeat center center/cover;
+  color: white;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  animation: slideInUp 1s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  animation: slideInUp 1.5s ease-in-out;
+}
+
+.hero .btn-primary {
+  background: var(--secondary-gradient);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background: var(--primary-gradient);
+  animation: bounce 1s ease-in-out;
+}
+
+.hero .btn-secondary {
+  background: white;
+  color: var(--text-color);
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn-secondary:hover {
+  background: var(--secondary-gradient);
+  color: white;
+  animation: bounce 1s ease-in-out;
+}
+
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Standard background-clip */
+  animation: slideInUp 2s ease-in-out;
+}
+
+.features .feature-item,
+.testimonials .testimonial-item {
+  padding: 30px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.features .feature-item:hover,
+.testimonials .testimonial-item:hover {
+  transform: translateY(-10px);
+}
+
+.features .feature-item h3,
+.testimonials .testimonial-item blockquote {
+  font-size: 1.5rem;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Standard background-clip */
+}
+
+.testimonials .testimonial-item blockquote footer {
+  font-size: 1rem;
+  background: var(--secondary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Standard background-clip */
+}
+
+.screenshots img {
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.pricing-plan.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideInUp 1.5s ease-in-out;
+}
+
+.pricing-plan.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact form .form-control {
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 10px 20px;
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background: var(--secondary-gradient);
+}
+
+footer {
+  background: var(--primary-gradient);
+  padding: 20px 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+footer p {
+  margin: 0;
+  color: black;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000; /* Ensure toggle is above other content */
+}
+
+.dark-mode-toggle input[type="checkbox"] {
+  display: none;
+}
+
+.dark-mode-toggle label {
+  display: block;
+  width: 60px;
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 17px;
+  padding: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.dark-mode-toggle label:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.dark-mode-toggle input[type="checkbox"]:checked + label:after {
+  transform: translateX(30px);
+}
+
+/* Additional styles for dark mode */
+body.dark-mode {
+  color: #fff;
+  background-color: #000;
+}
+
+.dark-mode .hero {
+  background-color: #000;
+}
+
+.dark-mode .btn-primary,
+.dark-mode .btn-secondary {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-mode h2 {
+  color: #fff;
+}
+
+.dark-mode .features .feature-item,
+.dark-mode .testimonials .testimonial-item {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .pricing-plan.card {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .pricing-plan.card:hover {
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .scroll-to-top {
+  background: #fff;
+  color: #000;
+}
+
+.dark-mode footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode .screenshots {
+  background-color: #000;
+}
+
+.dark-mode .pricing {
+  background-color: #000;
+}
+
+/* Hover effect for primary button */
+.hero .btn-primary:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.hero .btn-secondary:hover {
+  transform: translateY(-3px);
+}
+
+a:hover {
+  color: var(--secondary-gradient);
+}
+
+.features .feature-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .testimonial-item:hover {
+  transform: translateY(-5px);
+}
+
+.scroll-to-top:hover {
+  background: var(--secondary-gradient);
+  transform: scale(1.1);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+}
+
+.lightbox-img {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
